@@ -11,7 +11,7 @@ function NavItemsLarge(props) {
           to={menuItem === 'Home' ? '/' : menuItem.toLowerCase()}
           exact
           className="text-xl ml-10 text-white focus:outline-none text-center p-1"
-          activeClassName="border-blue-500 border-b-2"
+          activeClassName="border-custom-blue-button border-b-2"
         >
           {menuItem}
         </NavLink>
