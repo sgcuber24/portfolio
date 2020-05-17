@@ -29,15 +29,6 @@ class App extends React.Component {
     this.setState({ height: window.innerHeight });
   };
   particleParams = {
-    backgroundMask: {
-      cover: {
-        color: {
-          value: '#fff',
-        },
-        opacity: 0.1,
-      },
-      enable: false,
-    },
     detectRetina: true,
     fpsLimit: 999,
 
@@ -48,11 +39,7 @@ class App extends React.Component {
           enable: true,
           mode: 'push',
         },
-        onDiv: {
-          elementId: '',
-          enable: false,
-          mode: [],
-        },
+
         onHover: {
           enable: true,
           mode: 'repulse',
@@ -66,12 +53,7 @@ class App extends React.Component {
       },
       modes: {
         absorbers: [],
-        bubble: {
-          distance: 400,
-          duration: 2,
-          opacity: 0.8,
-          size: 40,
-        },
+
         connect: {
           distance: 80,
           lineLinked: {
@@ -87,7 +69,7 @@ class App extends React.Component {
           },
         },
         push: {
-          quantity: 4,
+          quantity: 2,
         },
         remove: {
           quantity: 2,
@@ -128,7 +110,7 @@ class App extends React.Component {
       number: {
         density: {
           enable: true,
-          area: 800,
+          value_area: 800,
           factor: 1000,
         },
         limit: 0,
@@ -162,10 +144,7 @@ class App extends React.Component {
   render() {
     if (this.state.height <= 450) {
       return (
-        <div
-          className="h-screen max-h-full w-screen flex flex-col flex-wrap justify-center align-middle"
-          id="mainCanvas"
-        >
+        <div className="h-screen max-h-full w-screen flex flex-col flex-wrap justify-center align-middle">
           <h1 className="text-center text-white px-16">
             Hello, thanks for showing interest in my website. Please rotate your
             screen or find a larger screen to experience this website to its
@@ -178,7 +157,10 @@ class App extends React.Component {
         <HashRouter>
           <Switch>
             <>
-              <div className="xl:px-32 xl:py-20 px-8 py-10 sm:px-20 sm:py-16 lg:px-24 lg:py-18 h-screen w-screen absolute">
+              <div
+                className="xl:px-32 xl:py-20 px-8 py-10 sm:px-20 sm:py-16 lg:px-24 lg:py-18 h-screen w-screen absolute z-10 pointer-events-none"
+                id="mainDiv"
+              >
                 <NavBar onClickHandler={() => this.toggleDrawer()} />
                 <Drawer
                   anchor="right"

@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import NavItemsLarge from './navItemsLarge';
 function NavBar(props) {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between z-10 pointer-events-auto">
       <h1 className="text-white font-bold text-xl sm:text-3xl">Sriram G</h1>
       <button
         className="text-2xl text-white lg:hidden focus:outline-none"

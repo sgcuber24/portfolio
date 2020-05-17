@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Skills(props) {
   return (
     <div className="flex w-full h-full">
-      <div className="h-full lg:w-1/2 flex flex-wrap content-center align-middle bg-black14">
+      <div className="h-full lg:w-1/2 flex flex-wrap content-center align-middle">
         <h1 className="text-3xl md:text-5xl text-white font-bold">
           <span className="text-custom-blue-text">Skills</span> and{' '}
           <span className="text-custom-blue-text">Expertise</span>
@@ -20,7 +20,7 @@ function Skills(props) {
           <a
             href="https://resume.creddle.io/resume/657k02y9xfn"
             target="_blank"
-            className="text-custom-blue-text underline"
+            className="text-custom-blue-text underline pointer-events-auto"
           >
             Résumé
           </a>
@@ -28,12 +28,15 @@ function Skills(props) {
           <a
             href="https://www.linkedin.com/in/sriram-g-67487915a"
             target="_blank"
-            className="text-custom-blue-text underline"
+            className="text-custom-blue-text underline pointer-events-auto"
           >
             LinkedIn
           </a>{' '}
           or{' '}
-          <Link to="/contact" className="text-custom-blue-text underline">
+          <Link
+            to="/contact"
+            className="text-custom-blue-text underline pointer-events-auto"
+          >
             contact
           </Link>{' '}
           me.
