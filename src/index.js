@@ -29,7 +29,7 @@ class App extends React.Component {
   render() {
     if (this.state.height <= 450) {
       return (
-        <div className="bg-black14 h-screen max-h-full w-screen flex flex-col flex-wrap justify-center align-middle">
+        <div className="h-screen max-h-full w-screen flex flex-col flex-wrap justify-center align-middle">
           <h1 className="text-center text-white px-16">
             Hello, thanks for showing interest in my website. Please rotate your
             screen or find a larger screen to experience this website to its
@@ -42,7 +42,7 @@ class App extends React.Component {
         <Router>
           <Switch>
             <>
-              <div className="xl:px-32 xl:py-20 px-8 py-10 sm:px-20 sm:py-16 lg:px-24 lg:py-18 bg-black14 h-screen w-screen max-h-screen font-opensans">
+              <div className="xl:px-32 xl:py-20 px-8 py-10 sm:px-20 sm:py-16 lg:px-24 lg:py-18 h-screen w-screen">
                 <NavBar onClickHandler={() => this.toggleDrawer()} />
                 <Drawer
                   anchor="right"
