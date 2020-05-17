@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 function NavItemsLarge(props) {
   const menuItems = ['Home', 'Skills', 'Projects', 'Contact'];
   return (
-    <div className="bg-black14 flex flex-wrap justify-right hidden lg:inline-block">
+    <div className="flex flex-wrap justify-right hidden lg:inline-block">
       {menuItems.map((menuItem) => (
         <NavLink
           key={menuItem}

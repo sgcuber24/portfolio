@@ -3,7 +3,7 @@ import React from 'react';
 import '../css/main.css';
 function Home(props) {
   return (
-    <div className="h-full lg:w-1/2 flex flex-wrap content-center align-middle bg-black14">
+    <div className="h-full lg:w-1/2 flex flex-wrap content-center align-middle">
       <h1 className="text-3xl md:text-5xl text-white font-bold">
         Hello, I am <span className="text-custom-blue-text">Sriram.</span>
       </h1>
