@@ -6,6 +6,7 @@ import Drawer from '@material-ui/core/Drawer';
 import DrawerItems from './navbar/drawerItems';
 import Home from './home/home';
 import Skills from './skills/skills';
+import Contact from './contact/contact';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Particles from 'react-particles-js';
 
@@ -171,6 +172,7 @@ class App extends React.Component {
                 </Drawer>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/skills" component={Skills} />
+                <Route exact path="/contact" component={Contact} />
               </div>
               <Particles
                 className="opacity-25 h-screen w-screen"
