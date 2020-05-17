@@ -3,9 +3,16 @@ import React from 'react';
 import '../css/main.css';
 import { Link } from 'react-router-dom';
 import SkillList from './skillList';
+
+import { useSpring, animated } from 'react-spring';
 function Skills(props) {
+  const props1 = useSpring({
+    config: { duration: 700 },
+    opacity: 1,
+    from: { opacity: 0 },
+  });
   return (
-    <div className="xl:flex w-full h-full">
+    <animated.div style={props1} className="xl:flex w-full h-full">
       <div className="xl:h-full xl:w-1/2 flex flex-wrap content-center align-middle pt-24 sm:pt-32 md:pt-40 lg:pt-64 xl:pt-0">
         <h1 className="text-3xl md:text-5xl text-white font-bold">
           <span className="text-custom-blue-text">Skills</span> and{' '}
@@ -46,7 +53,7 @@ function Skills(props) {
       <div className="transform scale-75 sm:scale-100 flex flex-wrap xl:justify-end justify-center content-center lg:content-center  xl:w-1/2 py-8 sm:py-16 xl:p-0">
         <SkillList />
       </div>
-    </div>
+    </animated.div>
   );
 }
 

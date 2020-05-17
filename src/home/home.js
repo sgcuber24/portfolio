@@ -1,9 +1,18 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import '../css/main.css';
-function Home(props) {
+import { useSpring, animated } from 'react-spring';
+function Home() {
+  const props = useSpring({
+    config: { duration: 700 },
+    opacity: 1,
+    from: { opacity: 0 },
+  });
   return (
-    <div className="h-full lg:w-1/2 flex flex-wrap content-center align-middle">
+    <animated.div
+      style={props}
+      className="h-full lg:w-1/2 flex flex-wrap content-center align-middle"
+    >
       <h1 className="text-3xl md:text-5xl text-white font-bold">
         Hello, I am <span className="text-custom-blue-text">Sriram.</span>
       </h1>
@@ -23,7 +32,7 @@ function Home(props) {
           Résumé
         </button>
       </a>
-    </div>
+    </animated.div>
   );
 }
 

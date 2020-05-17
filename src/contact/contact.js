@@ -6,10 +6,20 @@ import {
   faGithub,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+
+import { useSpring, animated } from 'react-spring';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Contact(props) {
+  const props1 = useSpring({
+    config: { duration: 700 },
+    opacity: 1,
+    from: { opacity: 0 },
+  });
   return (
-    <div className="xl:flex w-full h-full justify-between">
+    <animated.div
+      style={props1}
+      className="xl:flex w-full h-full justify-between"
+    >
       <div className="xl:h-full xl:w-1/2 flex flex-wrap content-center align-middle pt-24 sm:pt-32 md:pt-40 lg:pt-64 xl:pt-0">
         <div>
           <h1 className="text-3xl md:text-5xl text-white font-bold">
@@ -170,7 +180,7 @@ function Contact(props) {
           </form>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 }
 
