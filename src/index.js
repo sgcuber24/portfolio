@@ -13,7 +13,11 @@ import Particles from 'react-particles-js';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { right: false, height: window.innerHeight };
+    this.state = {
+      right: false,
+      height: window.innerHeight,
+      width: window.innderWidth,
+    };
   }
   toggleDrawer() {
     this.setState((prevState) => ({
@@ -27,7 +31,7 @@ class App extends React.Component {
     window.removeEventListener('resize', this.handleWindowSizeChange);
   }
   handleWindowSizeChange = () => {
-    this.setState({ height: window.innerHeight });
+    this.setState({ height: window.innerHeight, width: window.innerWidth });
   };
   particleParams = {
     detectRetina: true,
@@ -143,7 +147,7 @@ class App extends React.Component {
     pauseOnBlur: true,
   };
   render() {
-    if (this.state.height <= 450) {
+    if (this.state.height <= 450 && this.state.width >= 450) {
       return (
         <div className="h-screen max-h-full w-screen flex flex-col flex-wrap justify-center align-middle">
           <h1 className="text-center text-white px-16">
