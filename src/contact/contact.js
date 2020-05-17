@@ -118,7 +118,7 @@ function Contact(props) {
           <h1 className="text-2xl md:text-4xl text-white font-bold">
             Leave a message
           </h1>
-          <form action="" className="mt-8" name="contact">
+          <form action="" className="mt-8" name="contact" method="post">
             <div>
               <input type="hidden" name="form-name" value="contact" />
               <label
