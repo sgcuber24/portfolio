@@ -37,7 +37,7 @@ function Contact(props) {
           </h1>
           <div className="flex flex-wrap hidden sm:block mt-10">
             <a
-              href="https://resume.creddle.io/resume/657k02y9xfn"
+              href="https://www.linkedin.com/in/sriram-g-67487915a"
               target="_blank"
               className="pointer-events-auto mr-5"
             >
@@ -49,7 +49,7 @@ function Contact(props) {
               </button>
             </a>
             <a
-              href="https://resume.creddle.io/resume/657k02y9xfn"
+              href="https://www.github.com/sgcuber24"
               target="_blank"
               className="pointer-events-auto mr-5"
             >
@@ -61,7 +61,7 @@ function Contact(props) {
               </button>
             </a>
             <a
-              href="https://resume.creddle.io/resume/657k02y9xfn"
+              href="https://www.instagram.com/sgcuber24"
               target="_blank"
               className="pointer-events-auto mr-5"
             >
@@ -118,8 +118,9 @@ function Contact(props) {
           <h1 className="text-2xl md:text-4xl text-white font-bold">
             Leave a message
           </h1>
-          <form action="" className="mt-8">
+          <form action="" className="mt-8" name="contact">
             <div>
+              <input type="hidden" name="form-name" value="contact" />
               <label
                 className="text-md font-bold text-gray-400 block"
                 for="name"
