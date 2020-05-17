@@ -6,7 +6,12 @@ import Drawer from '@material-ui/core/Drawer';
 import DrawerItems from './navbar/drawerItems';
 import Home from './home/home';
 import Skills from './skills/skills';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  HashRouter,
+  Route,
+  Switch,
+} from 'react-router-dom';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -39,7 +44,7 @@ class App extends React.Component {
       );
     } else
       return (
-        <Router>
+        <HashRouter>
           <Switch>
             <>
               <div className="xl:px-32 xl:py-20 px-8 py-10 sm:px-20 sm:py-16 lg:px-24 lg:py-18 h-screen w-screen">
@@ -56,7 +61,7 @@ class App extends React.Component {
               </div>
             </>
           </Switch>
-        </Router>
+        </HashRouter>
       );
   }
 }
