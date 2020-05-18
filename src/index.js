@@ -148,7 +148,7 @@ class App extends React.Component {
     pauseOnBlur: true,
   };
   render() {
-    if (this.state.height <= 450 && this.state.width >= 450) {
+    if (this.state.height <= 450 && this.state.width >= 500) {
       return (
         <div className="h-screen max-h-full w-screen flex flex-col flex-wrap justify-center align-middle">
           <h1 className="text-center text-white px-16">
@@ -164,7 +164,7 @@ class App extends React.Component {
           <Switch>
             <>
               <div
-                className="xl:px-32 xl:py-20 px-8 py-10 sm:px-20 sm:py-16 lg:px-24 lg:py-18 h-screen w-screen absolute z-10 pointer-events-none"
+                className="xl:px-32 xl:py-20 px-8 py-10 sm:px-20 sm:py-16 lg:px-24 lg:py-18 h-screen h-full w-screen absolute z-10 pointer-events-none"
                 id="mainDiv"
               >
                 <NavBar onClickHandler={() => this.toggleDrawer()} />
