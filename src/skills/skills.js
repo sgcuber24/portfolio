@@ -53,7 +53,7 @@ function Skills(props) {
 
       <div
         className={
-          window.innerHeight < 800 && window.innerWidth > 1280
+          window.innerHeight < 900 && window.innerWidth > 1280
             ? 'transform scale-75 sm:scale-100 flex flex-wrap xl:justify-end justify-center xl:w-1/2 py-8 sm:py-16 xl:pt-12'
             : 'transform scale-75 sm:scale-100 flex flex-wrap xl:justify-end content-center justify-center xl:w-1/2 py-8 sm:py-16 xl:pt-12'
         }
