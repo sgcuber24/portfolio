@@ -7,7 +7,7 @@ import stdModel from '../assets/mockups/StdModelScreenshot.png';
 
 const projectData = [
 	{
-		title: 'SeeFooooooood',
+		title: 'SeeFood',
 		description: 'An App built using Flutter and Tensorflow Lite to detect 10 different food classes.',
 		image: seeFood,
 		github: 'https://github.com/sgcuber24/see_food'
