@@ -18,7 +18,7 @@ function Home() {
       </h1>
       <p className="mt-8 md:mt-16 text-white text-opacity-50 text-md md:text-lg">
         I am a programmer and an aspiring opensource developer from Bangalore,
-        India looking to dive deep into Deep Learning and Flutter Development. I
+        India looking to dive deep into ReactJS Development, Deep Learning and Flutter Development. I
         love racking my brain over challenges and puzzles and would like to be
         occupied all the time. I am also an avid gamer with countless hours on
         competitve games.

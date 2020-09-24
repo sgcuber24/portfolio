@@ -10,7 +10,6 @@ import Contact from './contact/contact';
 import Projects from './projects/projects';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Particles from 'react-particles-js';
-
 class App extends React.Component {
   constructor(props) {
     super(props);
